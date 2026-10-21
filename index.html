@@ -2,25 +2,31 @@
 <html lang="it">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="robots" content="noindex, nofollow">
-  <title>Claudia &amp; Manuel</title>
-  <style>
-    html, body { height: 100%; margin: 0; }
-    body {
-      display: flex; align-items: center; justify-content: center;
-      background: #faf6ee; color: #3a2e22;
-      font-family: Georgia, "Times New Roman", serif; text-align: center;
-      padding: 0 16px;
-    }
-    h1 { font-weight: normal; font-size: 2rem; margin: 0 0 .5rem; }
-    p { margin: 0; font-style: italic; opacity: .75; }
-  </style>
+  <meta name="theme-color" content="#f7f1e3">
+  <meta name="color-scheme" content="light">
+  <title>Claudia &amp; Manuel — Il mazzo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Claudia &amp; Manuel</h1>
-    <p>Il mazzo sta preparando i suoi segreti…</p>
-  </main>
+  <main id="app" aria-live="polite"></main>
+
+  <!-- Visore carta (galleria) -->
+  <div id="viewer" class="viewer" hidden>
+    <div class="viewer-bar">
+      <button class="icon-btn" id="v-prev" aria-label="Carta precedente">‹</button>
+      <span id="v-count" class="v-count"></span>
+      <button class="icon-btn" id="v-next" aria-label="Carta successiva">›</button>
+      <button class="icon-btn close" id="v-close" aria-label="Chiudi">✕</button>
+    </div>
+    <div class="viewer-body" id="v-body"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
