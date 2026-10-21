@@ -17,7 +17,9 @@ const CARDS = {
     title: "La Trinacria",
     subtitle: "Le radici siciliane di Claudia",
     quiz: ["q1"],
-    hotspots: [],
+    hotspots: [
+      { x: 50, y: 50, text: "La Trinacria, simbolo della Sicilia e omaggio alle origini di Claudia." }
+    ],
     story: `
 <p>Al centro della carta compare la <strong>Trinacria</strong>, uno dei simboli più riconoscibili della Sicilia. Le sue tre gambe richiamano tradizionalmente la forma triangolare dell’isola e i suoi tre promontori estremi, mentre nel tempo la Trinacria è diventata soprattutto un emblema di identità, appartenenza e legame con la terra siciliana.</p>
 <p>Racchiusa all’interno del Denaro, diventa così una piccola commemorazione delle origini di Claudia: un modo per portare nel mazzo la terra da cui proviene e le radici che continueranno ad accompagnarla anche nel nuovo cammino.</p>`
@@ -75,7 +77,9 @@ const CARDS = {
     title: "Il Genio di Palermo",
     subtitle: "Il nume tutelare della città",
     quiz: ["b2"],
-    hotspots: [],
+    hotspots: [
+      { x: 50, y: 50, text: "Il Genio di Palermo, con il serpente che si nutre al suo petto." }
+    ],
     story: `
 <p>Un omaggio a Palermo e alla Sicilia attraverso una delle sue figure simboliche più antiche e particolari: il <strong>Genio di Palermo</strong>.</p>
 <p>Il Genio è la personificazione della città e il suo <strong>nume tutelare laico</strong>, una sorta di <em>genius loci</em> che rappresenta Palermo e i suoi abitanti, indipendentemente dalle loro origini o appartenenze. Le sue radici sono molto antiche, probabilmente precedenti all’epoca romana, e la sua origine precisa resta ancora avvolta nel mistero.</p>
@@ -207,7 +211,10 @@ const CARDS = {
     title: "Il limone",
     subtitle: "Aldo, Giovanni e Giacomo",
     quiz: ["q9"],
-    hotspots: [],   // da aggiungere quando arriva l'immagine definitiva
+    hotspots: [
+      { x: 45, y: 76, text: "Le due metà del limone: Aldo, Giovanni e Giacomo in “Tre uomini e una gamba”." },
+      { x: 49, y: 29.5, text: "Anche qui, la collana a forma di trancio di pizza." }
+    ],
     story: `
 <p>Nel Cavallo di Denari, all’interno dell’emblema, compare un piccolo dettaglio che per noi significa moltissimo: un <strong>limone</strong>.</p>
 <p>È un richiamo ad <strong>Aldo, Giovanni e Giacomo</strong>, il nostro trio comico del cuore. Le loro battute sono diventate nel tempo quasi un linguaggio parallelo della nostra relazione: le citiamo continuamente, spesso basta una parola perché entrambi capiamo il riferimento e, qualche volta, finiamo per ridere senza che chi ci sta intorno sappia bene perché.</p>
@@ -282,7 +289,7 @@ const QUESTIONS = [
   { id: "q9", label: "Cavallo di Denari",
     q: "Nell’emblema del Cavallo di Denari compare un limone. A cosa fa riferimento?",
     options: ["Agli agrumi siciliani", "A una scena di “Tre uomini e una gamba”", "Al bergamotto calabrese", "Alla cena del primo appuntamento"], correct: 1,
-    hint: { card: "cavallo-denari" } },   // diventerà un dettaglio ingrandito con l'immagine definitiva
+    hint: { card: "cavallo-denari", zoom: { x: 45, y: 76, scale: 3 } } },
 
   { id: "q10", label: "Asso di Bastoni",
     q: "Nell’Asso di Bastoni una vite si avvinghia a un fico selvatico. A quale leggenda fa riferimento?",
