@@ -94,10 +94,10 @@ const CARDS = {
     subtitle: "Il nostro primo appuntamento",
     quiz: ["q3"],
     hotspots: [
-      { x: 51, y: 25, text: "Le farfalle: la Casa delle Farfalle di Palermo, il luogo del nostro primo appuntamento." }
+      { x: 51, y: 25, text: "Le farfalle: la Casa delle Farfalle a Palazzo Riso, il luogo del nostro primo appuntamento." }
     ],
     story: `
-<p>Era la <strong>prima domenica di aprile del 2019</strong> e la destinazione era la Casa delle Farfalle di Palermo. L’appuntamento, però, era iniziato con un piccolo equivoco già qualche giorno prima: quando Manuel propose a Claudia di uscire, lei pensò che si trattasse di un’uscita in compagnia. Fu Manuel a chiarire che no, l’invito era proprio per lei.</p>
+<p>Era la <strong>prima domenica di aprile del 2019</strong> e la destinazione era la Casa delle Farfalle a Palazzo Riso. L’appuntamento, però, era iniziato con un piccolo equivoco già qualche giorno prima: quando Manuel propose a Claudia di uscire, lei pensò che si trattasse di un’uscita in compagnia. Fu Manuel a chiarire che no, l’invito era proprio per lei.</p>
 <p>Quello che Manuel non sapeva era che <strong>Claudia quella richiesta la aspettava già da un po’</strong>: lo aveva notato tempo prima, in mensa all’università.</p>
 <p>Quella domenica trascorremmo la giornata facendo quasi i turisti, tra la Casa delle Farfalle e Palermo vissuta con occhi un po’ diversi dal solito.</p>
 <p>Le farfalle del Tre di Spade ricordano così il luogo del nostro primo appuntamento e una giornata che, senza che potessimo ancora saperlo, sarebbe diventata l’inizio della nostra storia.</p>`
@@ -241,7 +241,7 @@ const SEMI_TEXT = `
 <p><strong>Le Spade</strong> rappresentano la forza e la protezione. Richiamano le tradizioni che ci hanno preceduto, la capacità di custodire ciò che conta e la forza necessaria per affrontare insieme ciò che verrà.</p>
 <p><strong>I Bastoni</strong>, infine, parlano di radici. Il legno, la vite e il fico raccontano la famiglia, la terra e ciò da cui proveniamo. In questo seme abbiamo voluto lasciare anche un richiamo alla storia e alla leggenda, intrecciando ancora una volta memoria, appartenenza e tradizione.</p>
 <p>Quattro semi diversi, ma una sola storia: <strong>crescere, condividere, proteggere e ricordare da dove veniamo.</strong></p>
-<p>È questo il filo che unisce il mazzo: portare con noi le nostre radici mentre iniziamo a costruire qualcosa di nuovo insieme.</p>`;
+<p>È questo il filo che unisce il mazzo di carte: portare con noi le nostre radici mentre iniziamo a costruire qualcosa di nuovo insieme.</p>`;
 
 /* ---------- QUIZ ----------
    hint: immagine mostrata con "Mostrami un indizio"
@@ -302,10 +302,10 @@ const QUESTIONS = [
   { id: "q12", label: "I quattro semi",
     q: "Qual è l’associazione corretta tra i quattro semi e il significato che abbiamo scelto per il mazzo?",
     options: [
-      "Denari → prosperità · Coppe → condivisione · Spade → forza e protezione · Bastoni → radici",
-      "Denari → radici · Coppe → protezione · Spade → festa · Bastoni → prosperità",
-      "Denari → forza · Coppe → prosperità · Spade → radici · Bastoni → condivisione",
-      "Denari → festa · Coppe → radici · Spade → prosperità · Bastoni → protezione"], correct: 0 }
+      "<strong>Denari</strong> → prosperità<br><strong>Coppe</strong> → condivisione<br><strong>Spade</strong> → forza e protezione<br><strong>Bastoni</strong> → radici",
+      "<strong>Denari</strong> → radici<br><strong>Coppe</strong> → protezione<br><strong>Spade</strong> → festa<br><strong>Bastoni</strong> → prosperità",
+      "<strong>Denari</strong> → forza<br><strong>Coppe</strong> → prosperità<br><strong>Spade</strong> → radici<br><strong>Bastoni</strong> → condivisione",
+      "<strong>Denari</strong> → festa<br><strong>Coppe</strong> → radici<br><strong>Spade</strong> → prosperità<br><strong>Bastoni</strong> → protezione"], correct: 0 }
 ];
 
 const BONUS_INTRO = {
@@ -358,8 +358,8 @@ const INTRO_TEXT = `
 const CLOSING_TEXT = `
 <h2>Adesso li hai trovati davvero tutti.</h2>
 <p>Dietro questi simboli ci sono luoghi, persone, passioni, battute, ricordi e piccoli pezzi della nostra quotidianità.</p>
-<p>Abbiamo voluto nasconderli nelle carte perché questo mazzo potesse raccontare qualcosa di noi anche dopo il matrimonio.</p>
-<p>Adesso conoscete tutti i suoi segreti.</p>
+<p>Abbiamo voluto nasconderli nelle carte perché queste potessero raccontare qualcosa di noi anche dopo il matrimonio.</p>
+<p>Adesso conoscete tutti i loro segreti.</p>
 <p><em>O quasi.</em></p>`;
 
 const WEDDING_DATE = "09 luglio 2027";

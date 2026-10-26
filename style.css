@@ -36,6 +36,14 @@ h3 { font-size: 1.35rem; font-weight: 600; }
 h4 { font-size: 1.2rem; margin-top: 1.2em; }
 p { margin: 0 0 .8em; }
 p.big { font-size: 1.25rem; }
+
+/* Testo giustificato con sillabazione italiana (paragrafi lunghi) */
+main > p, .story p, details.semi p, .panel p {
+  text-align: justify;
+  -webkit-hyphens: auto; hyphens: auto;
+}
+.center p, .closing p, p.center, .date, .bonus-score { text-align: center; }
+main > p.question, main > p.big:not(.center) { text-align: left; }
 em { color: var(--muted); }
 
 .ornament { text-align: center; color: var(--gold); letter-spacing: .4em; margin: 18px 0; font-size: 1.1rem; }
